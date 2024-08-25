@@ -4,15 +4,12 @@
 class TransporterCli < Formula
   desc "平田さんトランスポータCLI"
   homepage "https://github.com/koya1616/transporter-cli"
-  url "https://github.com/koya1616/transporter-cli/archive/refs/tags/0.0.4.tar.gz"
-  sha256 "ecbe400518b0c2000a0ea11096882f8a66dd269670711d459106f3c3f0d150e9"
+  url "https://github.com/koya1616/transporter-cli/archive/refs/tags/0.0.5.tar.gz"
+  sha256 "a189b69fa364de5f4d4c24f813ab58e11b727318fcde15ebd1c06f0118a239b8"
 
   depends_on "rust" => :build
 
   def install
-    hirata_store_dir = File.expand_path("~/.hirata_store")
-    mkdir_p hirata_store_dir
-
     system "cargo", "install", *std_cargo_args
   end
 
