@@ -10,10 +10,10 @@ class TransporterCli < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
-
     hirata_store_dir = File.expand_path("~/.hirata_store")
     mkdir_p hirata_store_dir
+
+    system "cargo", "install", *std_cargo_args
   end
 
   test do
