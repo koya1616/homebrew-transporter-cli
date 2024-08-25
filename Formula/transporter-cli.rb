@@ -4,8 +4,8 @@
 class TransporterCli < Formula
   desc "平田さんトランスポータCLI"
   homepage "https://github.com/koya1616/transporter-cli"
-  url "https://github.com/koya1616/transporter-cli/archive/refs/tags/0.0.2.tar.gz"
-  sha256 "f9b098df675e41245502c00332e6ee585da2a0cbd12f7fc9b1fb8e3ca019f54b"
+  url "https://github.com/koya1616/transporter-cli/archive/refs/tags/0.0.3.tar.gz"
+  sha256 "29ac36eeef1f7ce915e433c697f04a496930a819995c7228544587aea365b9e4"
 
   depends_on "rust" => :build
 
